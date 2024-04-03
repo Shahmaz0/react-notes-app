@@ -11,7 +11,7 @@ app.use(cors());
 app.get("/api/notes", async (req, res) => {
 
     const notes = await prisma.note.findMany()
-
+    console.log("database connected")
     res.json(notes)
 })
 
