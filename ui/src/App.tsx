@@ -9,28 +9,7 @@ type Note = {
 
 const App = () => {
 
-    const [notes, setNotes] = useState <Note[]>([
-        {
-            id: 1,
-            title: "Note title 1",
-            content: "Content 1"
-        },
-        {
-            id: 2,
-            title: "Note title 2",
-            content: "Content 2"
-        },
-        {
-            id: 3,
-            title: "Note title 3",
-            content: "Content 3"
-        },
-        {
-            id: 4,
-            title: "Note title 4",
-            content: "Content 4"
-        },
-    ])
+    const [notes, setNotes] = useState <Note[]>([])
 
     const [title, setTitle] = useState("");
     const [content, setContent] = useState("")
@@ -224,7 +203,8 @@ const App = () => {
                             <button
                                 onClick={(event) =>
                                     deleteNote(event, note.id)
-                                }>x</button>
+                                }>x
+                            </button>
                         </div>
                         <h2>{note.title}</h2>
                         <p>{note.content}</p>
