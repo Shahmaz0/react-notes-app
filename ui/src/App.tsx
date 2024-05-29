@@ -211,7 +211,6 @@ const App = () => {
                         <p>{note.content}</p>
                     </div>
                 ))}
-
             </div>
         </div>
     )
